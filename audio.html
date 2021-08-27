@@ -1,0 +1,32 @@
+<!--
+    <audio>
+
+    # Atributos
+        - src
+        - controls
+        - width (largura)
+        - heigth (altura)
+        - autoplay (depende do navegador)
+        - preload
+            - auto (carrega o audio)
+            - metadata (apenas as informações principais)
+            - none (não carrega nada ate que o usuario interaja)
+        - loop (depende do navegador)
+        - muted (se vai começar mutado ou não)
+
+    - se não funcionar?
+        - fallback content
+    - source
+        - src
+        - type
+-->
+
+<audio controls
+    muted
+    preload="none"
+    loop
+>
+    <source src="./assets-example/viper.mp3" type="audio/mp3">
+    <source src="./assets-example/viper.ogg" type="audio/ogg">
+    <p>Seu navegador não suporta audio</p> 
+</audio>
